@@ -1,0 +1,76 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262433;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  width: 220px;
+  height: 220px;
+  background: #171b21;
+  position: relative;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333849;
+  border-radius: 50%;
+  transition: background 0.5s, transform 0.5s;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation a span i {
+  font-size: 1.5em;
+  color: #fff;
+  transition: color 0.5s, filter 0.5s;
+}
+
+.navigation a:hover span i {
+  color: #2dfc52;
+  filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 15px #2dfc52);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  margin: 20px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #2dfc52;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
